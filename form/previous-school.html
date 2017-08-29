@@ -1,0 +1,101 @@
+<head>
+<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
+<script src="formjs.js" type="text/javascript"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
+<link href="formstyle.css" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+
+      <form class="well form-horizontal" action="parent-or-guardian.html" method="post"  id="contact_form">
+    <fieldset>
+
+    <!-- Form Name -->
+    <legend>Previous School:</legend>
+
+    <!-- Text input-->
+
+    <div class="form-group">
+    <label class="col-md-4 control-label">Last School Attended</label>  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon  glyphicon-briefcase"></i></span>
+    <input  name="Previous_School_School_Name" placeholder="School Name" class="form-control"  type="text">
+      </div>
+    </div>
+    </div>
+
+    <!-- Text input-->
+
+    <div class="form-group">
+    <label class="col-md-4 control-label" >Year</label> 
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+    <input name="Previous_School_year" placeholder="1870" class="form-control"  type="text">
+      </div>
+    </div>
+    </div>
+
+    <!-- Text input-->
+         <div class="form-group">
+    <label class="col-md-4 control-label">Grade</label>  
+      <div class="col-md-4 inputGroupContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+    <input name="Previous_School_grade" placeholder="Grade" class="form-control"  type="text">
+      </div>
+    </div>
+    </div>
+
+
+    
+
+    
+
+    <!-- Select Basic -->
+     
+    <div class="form-group"> 
+    <label class="col-md-4 control-label">Province</label>
+      <div class="col-md-4 selectContainer">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+      <select name="Previous_School_province" class="form-control selectpicker" >
+        <option value=" " >Please select Province</option>
+        <option >Andhra Pradesh</option>
+        <option >Arunachal Pradesh</option>
+        <option >Assam</option>
+        <option >Bihar</option>
+        <option >Chandigarh</option>
+        <option >Chhattisgarh</option>
+        <option >Dadra and Nagar Haveli</option>
+        <option >Daman and Diu</option>
+        <option >Goa</option>
+      </select>
+    </div>
+    </div>
+    </div>
+    <!-- Success message -->
+    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+    <!-- Button -->
+    <div class="form-group">
+    <label class="col-md-4 control-label"></label>
+    <div class="col-md-4">
+      <button type="submit" class="btn btn-warning" >Next <span class="glyphicon glyphicon-send"></span></button>
+    </div>
+    </div>
+
+    </fieldset>
+    </form>
+    </div>
+      </div><!-- /.container -->
+</body>
