@@ -5,204 +5,122 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
 <script src="formjs.js" type="text/javascript"></script>
 
+<!-- comment form original theme
+
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+-->
 <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
 <link href="formstyle.css" rel="stylesheet">
+<!-- style imported from lucid template  -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
+
+
 <body>
+  <section id="contact" class="contact text-center" style="margin-bottom: 200px;">
     <div class="container">
+      <div class="row">
+        <div class="contact-heading">
+          <h4></h4>
+          <h2>PARENT OR GUARDIAN DETAILS</h2>
+          <img class="img-responsive" src="../img/daag.png" alt="">
+        </div>
+        <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
+          <article class="contact-form wide">
+            <form action="choice-of-subject.html" id="contact_form">
 
-      <form class="well form-horizontal" action="choice-of-subject.html" method="post"  id="contact_form">
-    <fieldset>
+              <div class="col-md-5 col-md-offset-1 contact-form-left">
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_surname" placeholder="Surname" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_id_number" placeholder="ID Number #" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_zip" placeholder="Area Code" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_cell_phone" placeholder="Cell Number #" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_company_name" placeholder="Name Of The Company" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_section" placeholder="Section or Department" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_work_zip" placeholder="Area Code" class="form-control"  type="text">
+                </div>
+              </div>
 
-    <!-- Form Name -->
-    <legend>PARENT OR GUARDIAN DETAILS:</legend>
-    
-    <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label" >Surname</label> 
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input name="parent_or_guardian_surname" placeholder="Surname" class="form-control"  type="text">
+              <div class="col-md-5 contact-form-right text-right">
+                
+                <div class="form-group field-right">
+                  <input  name="parent_or_guardian_first_name" placeholder="First Name (s)" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_address" placeholder="Residential Address" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_phone" placeholder="Home Telephone Number #" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_occupation" placeholder="Occupation" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_supervisor" placeholder="Supervisor, Foreman or Manager's Name" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_work_address" placeholder="Work Address" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_work_phone" placeholder="Work Telephone Number #" class="form-control" type="text">
+                </div>
+                
+                <input type="submit" class="submit-btn continue" value="Next">
+              </div>
+            </form>
+          </article>
+        </div>
       </div>
     </div>
-    </div>
-    <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label">First Name (s)</label>  
-    <div class="col-md-4 inputGroupContainer">
-    <div class="input-group">
-    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-    <input  name="parent_or_guardian_first_name" placeholder="First Name" class="form-control"  type="text">
+  </section>
+    <!-- footer starts here -->
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="icons">
+            <a href=""><i class="fa fa-behance"></i></a>
+            <a href=""><i class="fa fa-dribbble"></i></a>
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+          </div>
+          <p>COPYRIGHT &copy; 2015 <a href="#">Mostafizur Rahman</a></p>
+        </div>
       </div>
     </div>
-    </div>
-
-    
-    <!-- Text input-->
-         
-    <div class="form-group">
-    <label class="col-md-4 control-label">ID Number #</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
-    <input name="parent_or_guardian_id_number" placeholder=" 845 555 212 598" class="form-control" type="text">
-      </div>
-    </div>
-    </div>
-
-    
-    <!-- Text input-->
-        
-    <div class="form-group">
-    <label class="col-md-4 control-label">Residential Address</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="parent_or_guardian_address" placeholder="Residential Address" class="form-control" type="text">
-      </div>
-    </div>
-    </div>
-
-    <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label">Area Code</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="parent_or_guardian_zip" placeholder="201014" class="form-control"  type="text">
-      </div>
-    </div>
-    </div>
-    
-
-    <!-- Text input-->
-         
-    <div class="form-group">
-    <label class="col-md-4 control-label">Home Telephone Number #</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-    <input name="parent_or_guardian_phone" placeholder="+91 9415007327" class="form-control" type="text">
-    </div>
-    </div>
-    </div>
-        <!-- Text input-->
-         
-    <div class="form-group">
-    <label class="col-md-4 control-label">Cell Number #</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-    <input name="parent_or_guardian_cell_phone" placeholder="+91 9415007327" class="form-control" type="text">
-      </div>
-    </div>
-    </div>
-
-    <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label">Occupation</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-folder-close"></i></span>
-    <input name="parent_or_guardian_occupation" placeholder="Occupation" class="form-control"  type="text">
-      </div>
-    </div>
-    </div>
-
-    <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label">Name Of The Company</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
-    <input name="parent_or_guardian_company_name" placeholder="Company Name" class="form-control"  type="text">
-      </div>
-    </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label">Supervisor</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
-    <input name="parent_or_guardian_supervisor" placeholder="Supervisor, Foreman or Manager's Name" class="form-control"  type="text">
-      </div>
-    </div>
-    </div>
-
-    <!-- Text input-->
-    <div class="form-group">
-    <label class="col-md-4 control-label">Section</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-folder-open"></i></span>
-    <input name="parent_or_guardian_section" placeholder="Section or Department" class="form-control"  type="text">
-      </div>
-    </div>
-    </div>
-
-
-    <!-- Text input-->
-        
-    <div class="form-group">
-    <label class="col-md-4 control-label">Work Address</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="parent_or_guardian_work_address" placeholder="Address" class="form-control" type="text">
-      </div>
-    </div>
-    </div>
-
-     <!-- Text input-->
-
-    <div class="form-group">
-    <label class="col-md-4 control-label">Area Code</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="parent_or_guardian_work_zip" placeholder="201014" class="form-control"  type="text">
-      </div>
-    </div>
-      </div>
-
-
-<!-- Text input-->
-         
-    <div class="form-group">
-    <label class="col-md-4 control-label">Work Telephone Number #</label>  
-      <div class="col-md-4 inputGroupContainer">
-      <div class="input-group">
-          <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-    <input name="parent_or_guardian_work_phone" placeholder="+91 9415007327" class="form-control" type="text">
-    </div>
-    </div>
-    </div>
-    
-    <!-- Success message -->
-    <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
-
-    <!-- Button -->
-    <div class="form-group">
-    <label class="col-md-4 control-label"></label>
-    <div class="col-md-4">
-      <button type="submit" class="btn btn-warning" >Next <span class="glyphicon glyphicon-send"></span></button>
-    </div>
-    </div>
-
-    </fieldset>
-    </form>
-    </div>
-      </div><!-- /.container -->
+  </footer>
 </body>
