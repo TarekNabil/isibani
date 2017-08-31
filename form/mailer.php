@@ -9,18 +9,18 @@ $mail = new PHPMailer(true);
     //Server settings
     $mail->SMTPDebug = 2;                                 // Enable verbose debug output
     //$mail->isSMTP();                                     // Set mailer to use SMTP mail.tareknabil.net
-    $mail->Host = ' ';  // Specify main and backup SMTP servers
+    $mail->Host = 'box843.bluehost.com ';  // Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = '';                 // SMTP username
-    $mail->Password = '';                           // SMTP password
+    $mail->Username = 'tareknabil@tareknabil.com';                 // SMTP username
+    $mail->Password = 'nofear34';                           // SMTP password
     $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
 
     //Recipients
-    $mail->setFrom('', 'Mailer');
-    $mail->addAddress('', 'Joe User');     // Add a recipient
-    $mail->addAddress('');               // Name is optional
-    $mail->addReplyTo('t', 'Information');
-    $mail->addCC('');
-    $mail->addBCC('');
+    $mail->setFrom('tareknabil@tareknabil.net', 'Mailer');
+    $mail->addAddress('tareknabil@tareknabil.net', 'Joe User');     // Add a recipient
+    $mail->addAddress('tareknabil@tareknabil.net');               // Name is optional
+    $mail->addReplyTo('tareknabil@tareknabil.net', 'Information');
+    $mail->addCC('tareknabil@tareknabil.net');
+    $mail->addBCC('tareknabil@tareknabil.net');
 

@@ -51,12 +51,12 @@ $_SESSION["plan"] = $_GET["plan"];
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../#home">Home</a></li>
-                    <li><a href="../#features">Features</a></li>
-                    <li><a href="../#about">About</a></li>
-                    <li><a href="../#testimonials">Testimonials</a></li>
-                    <li><a href="../#pricing">Pricing</a></li>
-                    <li><a href="../#contact">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#Classes">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#Apply">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div>
             </div>
@@ -114,13 +114,10 @@ $_SESSION["plan"] = $_GET["plan"];
       <div class="row">
         <div class="col-md-12">
           <div class="icons">
-            <a href=""><i class="fa fa-behance"></i></a>
-            <a href=""><i class="fa fa-dribbble"></i></a>
             <a href=""><i class="fa fa-twitter"></i></a>
             <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-linkedin"></i></a>
           </div>
-          <p>COPYRIGHT &copy; 2015 <a href="#">Mostafizur Rahman</a></p>
+          <p>COPYRIGHT &copy; 2017  Isibani Academy . Designed & Developed by Brandwork</p>
         </div>
       </div>
     </div>
