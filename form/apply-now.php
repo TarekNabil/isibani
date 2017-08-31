@@ -1,3 +1,8 @@
+<?php
+@session_start();
+if($_GET["plan"]){
+$_SESSION["plan"] = $_GET["plan"];
+?>
 <head>
 <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
@@ -94,7 +99,7 @@
               A copy of a medical aid card ( if applicable )
             </li>
           </ul>
-          <form class="" action="personal_details.html" method="post"  id="">
+          <form class="" action="personal_details.php?apply=ok" method="post"  id="">
 
           <button type="submit" class="download-btn">Continue</button>
           </form>
@@ -120,5 +125,5 @@
       </div>
     </div>
   </footer>
-
 </body>
+<?php }else{echo"Cheating. Huh!";}?>

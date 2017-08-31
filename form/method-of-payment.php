@@ -1,3 +1,8 @@
+<?php
+@session_start();
+if ($_GET["subject"]) {
+    $_SESSION["subject"]=$_GET["subject"];
+?>
 <head>
 <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
@@ -67,11 +72,25 @@
           <img class="img-responsive" src="../img/daag.png" alt="">
         </div>
 		<div class="pricing-tables">
+    <?php
+    if ($_SESSION["plan"]=="Bronze") {
+        ?>
+      <div class=" wow zoomIn animated">
+        <div class="single-table free">
+          <div class="table-description"  >
+            <p style="margin-bottom: 51px;"> R500 x 3 months for any number of subjects.</p>
+            <a href="finish.php?payment=one" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
+          </div>
+        </div>
+      </div>
+        <?php
+    } else {
+    ?>
 			<div class="col-md-4 col-sm-12 wow zoomIn animated">
 				<div class="single-table free">
 					<div class="table-description"  >
 						<p style="margin-bottom: 51px;"> R600 x 10 months for 4 or more subjects / R550 for less than 4 subjects. This is payable on/before 3rd of each month</p>
-						<a href="../" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
+						<a href="finish.php?payment=two" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
 					</div>
 				</div>
 			</div>
@@ -79,7 +98,7 @@
 				<div class="single-table personal">
 					<div class="table-description">
 						<p> 2 equal installments (2 x R2700) for more than 4 subjects or (2 x R2475) for less than 4 subjects. 1st installment due on/before 03 March. 2nd on/before 03 July. This option gives you a 10% discount.</p>
-						<a href="../" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
+						<a href="finish.php?payment=three" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
 					</div>
 				</div>
 			</div>
@@ -87,10 +106,12 @@
 				<div class="single-table business">
 					<div class="table-description" >
 						<p style="margin-bottom: 25px;"> A once-off payment of R4800 for more than 4 subjects or R4400 for less for less than 4 subjects payable on/before 03 March. This option gives you a 20% discount.</p>
-						<a href="../" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
+						<a href="finish.php?payment=four" class="btn btn-lg btn-default ordernowButton" role="button">SUBMIT NOW</a>
 					</div>
 				</div>
 			</div>
+        <?php
+    } ?>
 		</div>
       </div>
     </div>
@@ -113,3 +134,7 @@
     </div>
   </footer>
 </body>
+</body>
+<?php } else {
+    echo"Cheating. Huh!";
+}?>

@@ -1,3 +1,10 @@
+<?php
+@session_start();
+if ($_GET["Previous_School_School_Name"]) {
+    foreach ($_GET as $key => $value) {
+        $_SESSION[ $key ]=$value;
+    }
+?>
 <head>
 <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
@@ -60,48 +67,79 @@
     </div>
   </header><!-- end of header section -->
 
-  <section id="contact" class="contact text-center" style="padding-top: 80px;">
+  <section id="contact" class="contact text-center" style="margin-bottom: 280px;padding-top: 80px;">
     <div class="container">
       <div class="row">
         <div class="contact-heading">
           <h4></h4>
-          <h2>Previous School</h2>
+          <h2>PARENT OR GUARDIAN DETAILS</h2>
           <img class="img-responsive" src="../img/daag.png" alt="">
         </div>
         <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
           <article class="contact-form wide">
-            <form action="parent-or-guardian.html" id="contact_form">
+            <form action="choice-of-subject.php" id="contact_form">
+
               <div class="col-md-5 col-md-offset-1 contact-form-left">
                 
                 <div class="form-group">
-                  <input  name="Previous_School_School_Name" placeholder="Last School Attended" class="form-control"  type="text">
+                  <input name="parent_or_guardian_surname" placeholder="Surname" class="form-control"  type="text">
                 </div>
                 
                 <div class="form-group">
-                  <input name="Previous_School_grade" placeholder="Grade" class="form-control"  type="text">
+                  <input name="parent_or_guardian_id_number" placeholder="ID Number #" class="form-control" type="text">
                 </div>
                 
+                <div class="form-group">
+                  <input name="parent_or_guardian_zip" placeholder="Area Code" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_cell_phone" placeholder="Cell Number #" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_company_name" placeholder="Name Of The Company" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_section" placeholder="Section or Department" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group">
+                  <input name="parent_or_guardian_work_zip" placeholder="Area Code" class="form-control"  type="text">
+                </div>
               </div>
+
               <div class="col-md-5 contact-form-right text-right">
                 
                 <div class="form-group field-right">
-                  <input name="Previous_School_year" placeholder="Year" class="form-control"  type="text">
+                  <input  name="parent_or_guardian_first_name" placeholder="First Name (s)" class="form-control"  type="text">
                 </div>
-
+                
                 <div class="form-group field-right">
-                  <select name="Previous_School_province" class="form-control" >
-                    <option value=" " >Please select Province</option>
-                    <option >Andhra Pradesh</option>
-                    <option >Arunachal Pradesh</option>
-                    <option >Assam</option>
-                    <option >Bihar</option>
-                    <option >Chandigarh</option>
-                    <option >Chhattisgarh</option>
-                    <option >Dadra and Nagar Haveli</option>
-                    <option >Daman and Diu</option>
-                    <option >Goa</option>
-                  </select>
+                  <input name="parent_or_guardian_address" placeholder="Residential Address" class="form-control" type="text">
                 </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_phone" placeholder="Home Telephone Number #" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_occupation" placeholder="Occupation" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_supervisor" placeholder="Supervisor, Foreman or Manager's Name" class="form-control"  type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_work_address" placeholder="Work Address" class="form-control" type="text">
+                </div>
+                
+                <div class="form-group field-right">
+                  <input name="parent_or_guardian_work_phone" placeholder="Work Telephone Number #" class="form-control" type="text">
+                </div>
+                
                 <input type="submit" class="submit-btn continue" value="Next">
               </div>
             </form>
@@ -128,3 +166,6 @@
     </div>
   </footer>
 </body>
+<?php } else {
+    echo"Cheating. Huh!";
+}?>

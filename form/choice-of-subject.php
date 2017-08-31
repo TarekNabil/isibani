@@ -1,3 +1,12 @@
+<?php
+@session_start();
+//var_dump($_SESSION);
+//var_dump($_GET);
+if ($_GET["parent_or_guardian_surname"]) {
+    foreach ($_GET as $key => $value) {
+        $_SESSION[ $key ]=$value;
+    }
+?>
 <head>
 <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
@@ -70,78 +79,78 @@
         </div>
         <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
           <article class="contact-form wide">
-            <form action="method-of-payment.html" id="contact_form">
+            <form action="method-of-payment.php" id="contact_form">
 
             <label class="control-label " style="margin-top: 20px; text-align: left; margin-left: 20px;">Please select one (1) or more subject choices your prefer:</label>
               <div class="col-md-5 col-md-offset-1 text-left">
                 
 
                 <div class="checkbox">
-                              <label><input type="checkbox" name="subject" value="ZULHL">ZULHL (SBA / ORAL)</label>
+                              <label><input type="checkbox" name="subject[]" value="ZULHL">ZULHL (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ENGHL">ENGHL (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ENGHL">ENGHL (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="XHOHL">XHOHL (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="XHOHL">XHOHL (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ZULFA">ZULFA (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ZULFA">ZULFA (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ENGFA">ENGFA (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ENGFA">ENGFA (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="XHOFA">XHOFA (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="XHOFA">XHOFA (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ACCO">ACCO (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ACCO">ACCO (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="BUSE">BUSE (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="BUSE">BUSE (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ECON">ECON (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ECON">ECON (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="AGRI">AGRI (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="AGRI">AGRI (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="GEOG">GEOG (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="GEOG">GEOG (SBA)</label>
                             </div>
               </div>
 
 
               <div class="col-md-5 text-left">
                                           <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="TOUR">TOUR (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="TOUR">TOUR (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="MATH">MATH (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="MATH">MATH (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="MLIT">MLIT (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="MLIT">MLIT (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="PHYS">PHYS (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="PHYS">PHYS (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="LISC">LISC (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="LISC">LISC (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="LIFE">LIFE (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="LIFE">LIFE (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="HIST">HIST (SBA)</label>
+                              <label><input type="checkbox"  name="subject[]" value="HIST">HIST (SBA)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ZULHL">ZULHL (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ZULHL">ZULHL (SBA / ORAL)</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="REED">REED</label>
+                              <label><input type="checkbox"  name="subject[]" value="REED">REED</label>
                             </div>
                             <div class="checkbox">
-                              <label><input type="checkbox"  name="subject" value="ZULHL">ZULHL (SBA / ORAL)</label>
+                              <label><input type="checkbox"  name="subject[]" value="ZULHL">ZULHL (SBA / ORAL)</label>
                             </div>
                             <div class="contact-form-right text-right">
                 <input type="submit" class="submit-btn continue" value="Next">
@@ -171,3 +180,6 @@
     </div>
   </footer>
 </body>
+<?php } else {
+    echo"Cheating. Huh!";
+}?>

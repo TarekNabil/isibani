@@ -1,24 +1,33 @@
+<?php
+@session_start();
+if ($_GET["personal_details_surname"]) {
+    foreach ($_GET as $key => $value) {
+        $_SESSION[ $key ]=$value;
+    }
+?>
 <head>
-  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
-  <script src="formjs.js" type="text/javascript"></script>
+<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
+<script src="formjs.js" type="text/javascript"></script>
 
-  <!-- comment form original theme
+<!-- comment form original theme
 
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
-  -->
-  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
-  <link href="formstyle.css" rel="stylesheet">
-  <!-- style imported from lucid template  --> 
-  <link rel="stylesheet" href="../css/font-awesome.min.css">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
+-->
+<link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
+<link href="formstyle.css" rel="stylesheet">
+<!-- style imported from lucid template  -->
+<link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+
+
 </head>
 
 
@@ -63,44 +72,41 @@
       <div class="row">
         <div class="contact-heading">
           <h4></h4>
-          <h2>PERSONAL DETAILS</h2>
+          <h2>Previous School</h2>
           <img class="img-responsive" src="../img/daag.png" alt="">
         </div>
         <div class="col-md-8 col-md-offset-2 col-xs-12 col-sm-12">
           <article class="contact-form wide">
-            <form action="previous-school.html" id="contact_form">
+            <form action="parent-or-guardian.php" method="get" id="contact_form">
               <div class="col-md-5 col-md-offset-1 contact-form-left">
                 
                 <div class="form-group">
-                  <input  name="personal_details_surname" placeholder="Surname" class="form-control"  type="text">
+                  <input  name="Previous_School_School_Name" placeholder="Last School Attended" class="form-control"  type="text">
                 </div>
                 
                 <div class="form-group">
-                  <input name="personal_details_id_number" placeholder="ID Number #" class="form-control" type="text">
+                  <input name="Previous_School_grade" placeholder="Grade" class="form-control"  type="text">
                 </div>
-
-                <div class="form-group">
-                  <input name="personal_details_age" placeholder="Age" class="form-control"  type="text">
-                </div>
-                
                 
               </div>
               <div class="col-md-5 contact-form-right text-right">
                 
                 <div class="form-group field-right">
-                  <input name="personal_details_first_name" placeholder="First Name" class="form-control"  type="text">
-                </div>
-                
-                <div class="form-group field-right">
-                  <input name="personal_details_date_of_birth" placeholder="Date Of Birth" class="form-control" type="text">
+                  <input name="Previous_School_year" placeholder="Year" class="form-control"  type="text">
                 </div>
 
-
                 <div class="form-group field-right">
-                  <select name="personal_details_gender" class="form-control" placeholder="Please select your Gender">
-                    <option  value=" " >Gender</option>
-                    <option  value="Male" >Male</option>
-                    <option  value="Female" >Female</option>
+                  <select name="Previous_School_province" class="form-control" >
+                    <option value=" " >Please select Province</option>
+                    <option >Andhra Pradesh</option>
+                    <option >Arunachal Pradesh</option>
+                    <option >Assam</option>
+                    <option >Bihar</option>
+                    <option >Chandigarh</option>
+                    <option >Chhattisgarh</option>
+                    <option >Dadra and Nagar Haveli</option>
+                    <option >Daman and Diu</option>
+                    <option >Goa</option>
                   </select>
                 </div>
                 <input type="submit" class="submit-btn continue" value="Next">
@@ -129,3 +135,6 @@
     </div>
   </footer>
 </body>
+<?php } else {
+    echo"Cheating. Huh!";
+}?>
