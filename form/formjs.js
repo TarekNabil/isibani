@@ -102,7 +102,7 @@
             Previous_School_grade: {
                 validators: {
                         stringLength: {
-                        min: 2,
+                        min: 1,
                     },
                         notEmpty: {
                         message: 'Please supply your grade'
@@ -171,7 +171,7 @@
                     },
                     zipCode: {
                         country: 'IN',
-                        message: 'Please supply a vaild zip code in India'
+                        message: 'Please supply a vaild zip code in South Africa'
                     }
                 }
             },
@@ -255,7 +255,7 @@
                     },
                     zipCode: {
                         country: 'IN',
-                        message: 'Please supply a vaild zip code in India'
+                        message: 'Please supply a vaild zip code in South Africa'
                     }
                 }
             },

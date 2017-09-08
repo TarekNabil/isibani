@@ -6,21 +6,17 @@ if ($_GET["Previous_School_School_Name"]) {
     }
 ?>
 <head>
-<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
-<script src="formjs.js" type="text/javascript"></script>
+  <script src="../js/jquery-2.1.1.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="formjs.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
 
-<!-- comment form original theme
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
--->
-<link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
-<link href="formstyle.css" rel="stylesheet">
-<!-- style imported from lucid template  -->
-<link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
+  <link href="formstyle.css" rel="stylesheet">
+  <!-- style imported from lucid template  -->
+  <title> Welcome to Isibani Academy</title>
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -52,14 +48,14 @@ if ($_GET["Previous_School_School_Name"]) {
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#Classes">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#Apply">Pricing</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="../#home">Home</a></li>
+                    <li><a href="../#features">Classes</a></li>
+                    <li><a href="../#about">About</a></li>
+                    <li><a href="../#accreditation">Accreditation</a></li>
+                    <li><a href="../#pricing">Enrol Now</a></li>
+                    <li><a href="../#contact">Contact</a></li>
                   </ul>
-                                  </div>
+                </div>
             </div>
           </nav>
         </div>
@@ -156,6 +152,7 @@ if ($_GET["Previous_School_School_Name"]) {
           <div class="icons">
             <a href=""><i class="fa fa-twitter"></i></a>
             <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-whatsapp"></i></a>
             
           </div>
           <p>COPYRIGHT &copy; 2017  Isibani Academy . Designed & Developed by Brandwork</p>

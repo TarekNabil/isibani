@@ -6,21 +6,17 @@ if ($_GET["personal_details_surname"]) {
     }
 ?>
 <head>
-<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
-<script src="formjs.js" type="text/javascript"></script>
+  <script src="../js/jquery-2.1.1.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="formjs.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js" type="text/javascript"></script>
 
-<!-- comment form original theme
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet">
--->
-<link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
-<link href="formstyle.css" rel="stylesheet">
-<!-- style imported from lucid template  -->
-<link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css" rel="stylesheet">
+  <link href="formstyle.css" rel="stylesheet">
+  <!-- style imported from lucid template  -->
+  <title> Welcome to Isibani Academy</title>
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/animate.min.css">
   <link rel="stylesheet" href="../css/style.css">
@@ -52,13 +48,13 @@ if ($_GET["personal_details_surname"]) {
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#Classes">Features</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#testimonials">Testimonials</a></li>
-                                <li><a href="#Apply">Pricing</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                              </ul>
+                    <li><a href="../#home">Home</a></li>
+                    <li><a href="../#features">Classes</a></li>
+                    <li><a href="../#about">About</a></li>
+                    <li><a href="../#accreditation">Accreditation</a></li>
+                    <li><a href="../#pricing">Enrol Now</a></li>
+                    <li><a href="../#contact">Contact</a></li>
+                  </ul>
                 </div>
             </div>
           </nav>
@@ -98,15 +94,15 @@ if ($_GET["personal_details_surname"]) {
                 <div class="form-group field-right">
                   <select name="Previous_School_province" class="form-control" >
                     <option value=" " >Please select Province</option>
-                    <option >Andhra Pradesh</option>
-                    <option >Arunachal Pradesh</option>
-                    <option >Assam</option>
-                    <option >Bihar</option>
-                    <option >Chandigarh</option>
-                    <option >Chhattisgarh</option>
-                    <option >Dadra and Nagar Haveli</option>
-                    <option >Daman and Diu</option>
-                    <option >Goa</option>
+                    <option >Eastern Cape</option>
+                    <option >Free State </option>
+                    <option >Gauteng</option>
+                    <option >KwaZulu-Natal </option>
+                    <option >Limpopo</option>
+                    <option >Mpumalanga</option>
+                    <option >Northern Cape</option>
+                    <option >North West</option>
+                    <option >Western Cape</option>
                   </select>
                 </div>
                 <input type="submit" class="submit-btn continue" value="Next">
@@ -125,6 +121,7 @@ if ($_GET["personal_details_surname"]) {
           <div class="icons">
             <a href=""><i class="fa fa-twitter"></i></a>
             <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-whatsapp"></i></a>
            
           </div>
           <p>COPYRIGHT &copy; 2017  Isibani Academy . Designed & Developed by Brandwork</p>

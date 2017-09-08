@@ -6,8 +6,8 @@ jQuery(document).ready(function() {
     //this code is for the gmap
 	 var map = new GMaps({
         el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
+        lat: -29.6041403,
+        lng: 30.373661
       });
 
 
@@ -58,7 +58,7 @@ jQuery(document).ready(function() {
         var windowScrollPosTop = jQuery(window).scrollTop();
 
         if(windowScrollPosTop >= 150) {
-          jQuery(".top-header").css({"background": "#18171D",});
+          jQuery(".top-header").css({"background": "#0B1A6F",});
           jQuery(".top-header img.logo").css({"margin-top": "-30px", "margin-bottom": "15px"});
           jQuery(".nav-bar").css({"margin-top": "6px",});
         }

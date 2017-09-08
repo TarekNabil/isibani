@@ -9,13 +9,6 @@
 *
 *
 *******/
-@font-face {
-    font-family: "Heavitas";
-    src: url(../fonts/Heavitas.woff);
-}
-
-
-
 body{
 	margin: 0;
 	padding: 0;
@@ -30,7 +23,7 @@ a:hover, a:visited, a{
 }
 h4{
 	font-size: 14px;
-	color: #0022d2;
+	color: #008ed6;
 	text-transform: uppercase;
 	margin-top: 65px;
 	font-weight: 700;
@@ -104,11 +97,11 @@ ul.nav{
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color: #fff;
-	border-bottom: 2px solid #0022d2;
+	border-bottom: 2px solid #008ed6;
 }
 .navbar-default .navbar-nav>li>a.active{
 	color: #fff;
-	border-bottom: 2px solid #0022d2;
+	border-bottom: 2px solid #008ed6;
 }
 .navbar-default .navbar-toggle {
   border-color: #fff;
@@ -116,7 +109,7 @@ ul.nav{
 
 /*banner area*/
 .banner{
-	background: url(../img/Participation-Penalizes-Quiet-Learners-Making-the-Case-for-Standards-Based-Grading_SOURCE_stocks.jpg);
+	background: url(../img/banner.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: hidden;
@@ -125,7 +118,7 @@ ul.nav{
 }
 .banner h3{
 	font-size: 14px;
-	color: #0022d2;
+	color: #008ed6;
 	text-transform: uppercase;
 	margin-top: 160px;
 	font-weight: 700;
@@ -144,7 +137,7 @@ ul.nav{
 .download-btn{
 	width: 160px;
 	height: 50px;
-	background: #0022d2;
+	background: #008ed6;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 14px;
@@ -183,7 +176,7 @@ ul.nav{
 }
 .features i.fa{
 	font-size: 25px;
-	color: #0022d2;
+	color: #008ed6;
 	font-weight: 700;
 	width: 100px;
 	  height: 100px;
@@ -199,7 +192,7 @@ ul.nav{
 }
 .features i.fa:hover{
 	color: #fff;
-	background: #0022d2;
+	background: #008DD5;
 }
 .features h3{
 	font-size: 24px;
@@ -229,7 +222,7 @@ ul.nav{
 }
 .details ul li i.fa{
 	font-size: 20px;
-	color: #0022d2;
+	color: #008ed6;
 	height: 30px;
 	width: 30px;
 }
@@ -386,7 +379,7 @@ ul.nav{
 	-ms-transition:all .5s ease 0s;
 }
 .table-description a{
-	color: #0022d2;
+	color: #008ed6;
 	transition:all .5s ease 0s;
 	-webkit-transition:all .5s ease 0s;
 	-moz-transition:all .5s ease 0s;
@@ -397,7 +390,7 @@ ul.nav{
 	width: 160px;
 	height: 50px;
 	border:1px solid #e0e0e0;
-	color: #0022d2;
+	color: #008ed6;
 	border-radius: 4px;
 	background: transparent;
 	margin-bottom: 30px;
@@ -412,7 +405,7 @@ ul.nav{
 	width: 160px;
 	height: 50px;
 	border:1px solid #e0e0e0;
-	color: #0022d2;
+	color: #008ed6;
 	border-radius: 4px;
 	background: transparent;
 	margin-bottom: 30px;
@@ -424,7 +417,7 @@ ul.nav{
 	-ms-transition:all .5s ease 0s;
 }
 .sordernowButton:hover{
-	background: #0022d2;
+	background: #008ed6;
 	color: #fff;
 	border:0;
 }
@@ -501,16 +494,16 @@ ul.nav{
 	left: 39%;
 }
 .business h3{
-	color: #0022d2;
+	color: #008ed6;
 }
 .business-price{
-	background: #0022d2;
+	background: #008ed6;
 }
 .business-price p{
 	color: #fff;
 }
 .business button{
-	background: #0022d2;
+	background: #008ed6;
 	color: #fff;
 	border:0;
 }
@@ -518,10 +511,10 @@ ul.nav{
 	color: #fff;
 }
 .single-table:hover.single-table h3{
-	color: #0022d2;
+	color: #008ed6;
 }
 .single-table:hover .table-description button{
-	background: #0022d2;
+	background: #008ed6;
 	color: #fff;
 	border:0;
 }
@@ -532,11 +525,11 @@ ul.nav{
 	color: #fff;
 }
 .single-table:hover .table-price{
-	background: #0022d2;
+	background: #008ed6;
 }
 /*contact area*/
 .contact{
-	background: #0B1A6F;
+	background: #ededed;
 	position: relative;
 	height: 700px;
 }
@@ -545,7 +538,7 @@ ul.nav{
 	margin-bottom: 50px;
 }
 .contact i.fa{
-	color: #0022d2;
+	color: #008ed6;
 	font-size: 20px;
 	padding: 20px;
 }
@@ -573,9 +566,7 @@ ul.nav{
 	margin-bottom: 20px;
 	background: transparent;
 	color: #fff;
-
 }
-
 .contact-form textarea{
 	width: 100%;
 	height: 189px;
@@ -593,7 +584,7 @@ ul.nav{
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 700;
-	background: #0022d2;
+	background: #008ed6;
 	border-radius: 5px;
 	border:0;
 	margin-bottom: 40px;
@@ -606,29 +597,29 @@ ul.nav{
 }
 /*footer section*/
 .footer{
-	background: #0B1A6F ;
+	background: #15141a;
 }
 .footer i.fa{
 	font-size: 15px;
 	padding: 20px;
-	color: #ffb800;
+	color: #444348;
 	margin-top: 20px;
 }
 .footer i.fa:hover{
-	color: #0022d2;
+	color: #008ed6;
 }
 .footer p{
 	font-size: 14px;
-	color: #ffb800;
+	color: #444348;
 	text-transform: uppercase;
 	font-weight: 600;
 	margin-bottom: 30px;
 }
 .footer p a{
-	color: #ffb800;
+	color: #444348;
 }
 .footer p a:hover{
-	color: #0022d2;
+	color: #008ed6;
 }
 /*
 Tarek Nabil
@@ -660,7 +651,7 @@ Tarek Nabil
 	width: 765px;
 }
 label{
-    color: #0022d2;
+    color: #008ed6;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;

@@ -1,0 +1,28 @@
+[06-Sep-2017 08:26:03 UTC] PHP Fatal error:  Uncaught exception 'PHPMailer\PHPMailer\Exception' with message 'Invalid address:  (addAnAddress cc): ' in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php:939
+Stack trace:
+#0 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(886): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('cc', '', '')
+#1 /home/isibawga/public_html/form/finish.php(68): PHPMailer\PHPMailer\PHPMailer->addCC('')
+#2 {main}
+  thrown in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 939
+[06-Sep-2017 08:36:21 UTC] PHP Fatal error:  Uncaught exception 'PHPMailer\PHPMailer\Exception' with message 'Invalid address:  (addAnAddress cc): ' in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php:939
+Stack trace:
+#0 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(886): PHPMailer\PHPMailer\PHPMailer->addOrEnqueueAnAddress('cc', '', '')
+#1 /home/isibawga/public_html/form/finish.php(68): PHPMailer\PHPMailer\PHPMailer->addCC('')
+#2 {main}
+  thrown in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 939
+[06-Sep-2017 08:49:26 UTC] PHP Fatal error:  Uncaught exception 'PHPMailer\PHPMailer\Exception' with message 'SMTP Error: Could not connect to SMTP host.' in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php:1785
+Stack trace:
+#0 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1638): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1409): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Se...', 'This is a multi...')
+#2 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1256): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/isibawga/public_html/form/finish.php(83): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1785
+[06-Sep-2017 08:54:12 UTC] PHP Fatal error:  Uncaught exception 'PHPMailer\PHPMailer\Exception' with message 'SMTP Error: Could not connect to SMTP host.' in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php:1785
+Stack trace:
+#0 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1638): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1409): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Wed, 6 Se...', 'This is a multi...')
+#2 /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php(1256): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /home/isibawga/public_html/form/finish.php(83): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in /home/isibawga/public_html/vendor/phpmailer/phpmailer/src/PHPMailer.php on line 1785
